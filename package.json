@@ -6,14 +6,15 @@
   "author": "stephen.zambaux <stephen.zambaux@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "jest": "^26.4.0"
+    "jest": "^26.4.0",
+    "jest-serial-runner": "^1.1.0"
   },
   "dependencies": {
     "lockfile": "^1.0.4"
   },
   "scripts": {
-    "test:1": "rm -f *.lock && rm result.txt && yarn exec jest src/test-suite-1.seq.spec.js && cat result.txt && echo \n",
-    "test:2": "rm -f *.lock && rm result.txt && yarn exec jest src/test-suite-2.seq.spec.js && cat result.txt && echo \n",
-    "test": "rm -f *.lock && rm result.txt && yarn exec jest && cat result.txt && echo \n"
+    "test:1": "rm -f *.lock && rm -f result.txt && yarn exec jest src/test-suite-1.seq.spec.js && cat result.txt && echo \n",
+    "test:2": "rm -f *.lock && rm -f result.txt && yarn exec jest src/test-suite-2.seq.spec.js && cat result.txt && echo \n",
+    "test": "rm -f *.lock && rm -f result.txt && yarn exec jest && cat result.txt && echo \n"
   }
 }

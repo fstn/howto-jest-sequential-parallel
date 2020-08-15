@@ -1,7 +1,17 @@
 
+Start: Test suite 3 -> Test 1
+End: Test suite 3 -> Test 1
+Start: Test suite 3 -> Test 2
+End: Test suite 3 -> Test 2
+Start: Test suite 4 -> Test 1
+End: Test suite 4 -> Test 1
+Start: Test suite 4 -> Test 2
+End: Test suite 4 -> Test 2
 Lock: Test suite 2 -> Test 1
-Lock: Test suite 1 -> Test 1
-Lock: Test suite 1 -> Test 2Start: Test suite 3 -> Test 1
 Unlock: Test suite 2 -> Test 1
 Lock: Test suite 2 -> Test 2
-Unlock: Test suite 2 -> Test 2End: Test suite 3 -> Test 1Start: Test suite 3 -> Test 2End: Test suite 3 -> Test 2
+Unlock: Test suite 2 -> Test 2
+Lock: Test suite 1 -> Test 1
+Unlock: Test suite 1 -> Test 1
+Lock: Test suite 1 -> Test 2
+Unlock: Test suite 1 -> Test 2
