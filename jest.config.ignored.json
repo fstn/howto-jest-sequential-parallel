@@ -1,0 +1,12 @@
+{
+  "projects": [
+    {
+      "displayName": "sequential test",
+      "testMatch": ["<rootDir>/**/*.seq.spec.js"]
+    },
+    {
+      "displayName": "parallel test",
+      "testMatch": ["<rootDir>/**/*[^seq].spec.js"]
+    }
+  ]
+}

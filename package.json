@@ -1,0 +1,19 @@
+{
+  "name": "howto-jest-sequential-parallel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/fstn/howto-jest-sequential-parallel.git",
+  "author": "stephen.zambaux <stephen.zambaux@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^26.4.0"
+  },
+  "dependencies": {
+    "lockfile": "^1.0.4"
+  },
+  "scripts": {
+    "test:1": "rm -f *.lock && rm result.txt && yarn exec jest src/test-suite-1.seq.spec.js && cat result.txt && echo \n",
+    "test:2": "rm -f *.lock && rm result.txt && yarn exec jest src/test-suite-2.seq.spec.js && cat result.txt && echo \n",
+    "test": "rm -f *.lock && rm result.txt && yarn exec jest && cat result.txt && echo \n"
+  }
+}
