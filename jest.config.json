@@ -1,0 +1,13 @@
+{
+  "projects": [
+    {
+      "displayName": "sequential test",
+      "testMatch": ["<rootDir>/**/*.seq.spec.js"],
+      "runner": "jest-serial-runner"
+    },
+    {
+      "displayName": "parallel test",
+      "testMatch": ["<rootDir>/**/*[^s][^e][^q].spec.js"]
+    }
+  ]
+}
