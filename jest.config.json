@@ -7,7 +7,7 @@
     },
     {
       "displayName": "parallel test",
-      "testMatch": ["<rootDir>/**/*[^s][^e][^q].spec.js"]
+      "testMatch": ["<rootDir>/**/*!(seq).spec.js"]
     }
   ]
 }
